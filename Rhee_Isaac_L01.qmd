@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Isaac Rhee"
+pagetitle: "L01 Isaac Rhee"
 date: today
 
 format:
@@ -26,9 +26,7 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[https://github.com/stat301-3-2026-spring/l01-review-isaacrhee25](https://github.com/stat301-3-2026-spring/l01-review-isaacrhee25)
 :::
 
 ## Overview
@@ -46,7 +44,14 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Collect/clean data
+- Split the data
+- Create recipes
+- Select and train models
+- Tune hyperparameters if necessary
+- Evaluate model performance
+- Select best model
+- Evaluate final model on test set
 
 :::
 
@@ -57,7 +62,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised learning uses data where each observation has a known outcome. The goal is to learn a relationship between predictors and the target variable to make predictions on new data. Unsupervised learning uses data where no outcome variable is provided. The goal is to identify patterns in the data.  
 
 :::
 
@@ -70,7 +75,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+The goal of descriptive models is to summarize and explore the structure of the data. These models help identify patterns, trends, and relationships without making formal predictions or drawing causal conclusions. They are often used for data exploration and visualization
 
 :::
 
@@ -79,7 +84,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models aim to draw conclusions about a population based on a sample of data. The focus is on understanding relationships between variables and determining whether those relationships are statistically significant. These models are commonly used for hypothesis testing and estimating effects
 
 :::
 
@@ -88,7 +93,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive models are designed to make accurate predictions on new, unseen data.
 
 :::
 
@@ -103,7 +108,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model assumes f(x) follows some known form or equation, and estimates a set of parameters. 
 
 :::
 
@@ -114,7 +119,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+An empirically driven model makes no assumptions about the form of f(x)
 
 :::
 
@@ -125,7 +130,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are typically parametric, and empirically drive models are often nonparametric. 
 
 :::
 
@@ -136,7 +141,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models because they are based on known relationships and the parameters often have clear meanings. 
 
 :::
 
@@ -147,7 +152,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models are more flexible than mechanistic models. 
 
 :::
 
@@ -158,7 +163,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models have higher bias and lower variance, while empirically driven models have lower bias and higher variance. 
 
 :::
 
@@ -169,7 +174,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Regression is used for continuous outcome variables. The goal is to predict a value. Classification is used for cateogrical outcome variables. The goal is to assign observations to a class or category. 
 
 :::
 
@@ -180,8 +185,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Stratifying by the outcome/target variable ensures that both the training and testing sets have approximately the same proportion of each class as the original dataset. Basically, it keeps the class distribution consistent across splits. 
 :::
 
 ### Question 7 
@@ -191,7 +195,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+V-fold cross validation first splits the training data into v folds, and the model is trained on v-1 folds and evaluated on the remaining fold. This process is repeated v times, so each fold is the remaining fold once. With repeats, the entire process is performed multiple times with different splits. The RMSE is calculated on each validation fold and averaged across all folds and repeats to estimate the model’s test performance. We use it to provide a more robust estimate of test error than the training/test split. 
 
 :::
 
@@ -202,7 +206,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We might use a boostrap resampling procedure when the dataset is small. 
 
 :::
 
@@ -213,8 +217,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Model tuning is the process of selecting the best hyperparameters to improve model performance. We use it because proper tuning can improve model performance and ensure the model generalizes well to new data. 
 :::
 
 ### Question 10 
@@ -224,7 +227,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+RMSE and MAE. 
 
 :::
 
@@ -233,8 +236,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+ROC AUC and Accuracy. 
 :::
 
 ### Question 11
@@ -248,7 +250,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential. The goal is to understand relationship/effect of number of service calls on churn.
 
 :::
 
@@ -257,7 +259,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Prediction. The goal is to estimate or predict an outcome (churn) for customers based on observed predictors. 
 
 :::
 

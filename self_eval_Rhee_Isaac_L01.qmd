@@ -1,8 +1,10 @@
 ---
-title: "L01 Review"
-subtitle: "Data Science 3 with R (STAT 301-3)"
+title: "Self Evaluation L01 Review"
+subtitle: |
+  | Data Science 2 with R 
+  | STAT 301-2
 author: "Isaac Rhee"
-pagetitle: "L01 Isaac Rhee"
+pagetitle: "Self Evaluation PQ2 Isaac Rhee"
 date: today
 
 format:
@@ -17,10 +19,11 @@ format:
 
 execute:
   warning: false
+  error: true
 
 from: markdown+emoji
 reference-location: margin
-citation-location: margin   
+citation-location: margin 
 ---
 
 ::: {.callout-tip icon="false"}
@@ -55,6 +58,21 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+I forgot to add setting up a resampling technique and assessing the best model on the testing data.
+
+
+
+:::
+
 ### Question 2
 
 Explain the difference between supervised and unsupervised learning.
@@ -63,6 +81,24 @@ Explain the difference between supervised and unsupervised learning.
 ## Solution
 
 Supervised learning uses data where each observation has a known outcome. The goal is to learn a relationship between predictors and the target variable to make predictions on new data. Unsupervised learning uses data where no outcome variable is provided. The goal is to identify patterns in the data.  
+
+:::
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+I think I defined both well. 
+
+
+
 
 :::
 
@@ -94,6 +130,24 @@ Inferential models aim to draw conclusions about a population based on a sample 
 ## Solution
 
 Predictive models are designed to make accurate predictions on new, unseen data.
+
+:::
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+I think my answers are good
+
+
+
 
 :::
 
@@ -167,6 +221,24 @@ Mechanistic models have higher bias and lower variance, while empirically driven
 
 :::
 
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+I think my answers were good.
+
+
+
+
+:::
+
 ### Question 5 
 
 Explain the difference between a regression and classification machine learning (ML) problems.
@@ -175,6 +247,24 @@ Explain the difference between a regression and classification machine learning 
 ## Solution
 
 Regression is used for continuous outcome variables. The goal is to predict a value. Classification is used for cateogrical outcome variables. The goal is to assign observations to a class or category. 
+
+:::
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+I think my answer was good. 
+
+
+
 
 :::
 
@@ -188,6 +278,24 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 Stratifying by the outcome/target variable ensures that both the training and testing sets have approximately the same proportion of each class as the original dataset. Basically, it keeps the class distribution consistent across splits. 
 :::
 
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+I think my answer was good
+
+
+
+
+:::
+
 ### Question 7 
 
 Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
@@ -196,6 +304,25 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ## Solution
 
 V-fold cross validation first splits the training data into v folds, and the model is trained on v-1 folds and evaluated on the remaining fold. This process is repeated v times, so each fold is the remaining fold once. With repeats, the entire process is performed multiple times with different splits. The RMSE is calculated on each validation fold and averaged across all folds and repeats to estimate the model’s test performance. We use it to provide a more robust estimate of test error than the training/test split. 
+
+:::
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+I don't think I was detailed enough on the advantage of using v-fold cross validation.
+
+
+
+
 
 :::
 
@@ -210,6 +337,26 @@ We might use a boostrap resampling procedure when the dataset is small.
 
 :::
 
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+3
+
+## Explanation
+
+I didn't have anything about low variance
+
+## Updated solution
+
+If we want our estimate of the test RMSE to have very low variance then we should use a bootstrap resampling procedure instead of v-fold cross validation (we can run many more bootstraps than folds). Also we might use a boostrap resampling procedure when the dataset is small. 
+
+
+:::
+
 ### Question 9 
 
 Briefly describe model tuning and why we use it.
@@ -219,6 +366,22 @@ Briefly describe model tuning and why we use it.
 
 Model tuning is the process of selecting the best hyperparameters to improve model performance. We use it because proper tuning can improve model performance and ensure the model generalizes well to new data. 
 :::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+I didn't say that hyperparameters are user specified and I could have been a little more detailed. 
+
+
+
+:::
+
 
 ### Question 10 
 
@@ -237,6 +400,20 @@ What are two common performance metrics when dealing with a classification ML pr
 ## Solution
 
 ROC AUC and Accuracy. 
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+My answers were correct
+
+
+
 :::
 
 ### Question 11
@@ -263,3 +440,15 @@ Prediction. The goal is to estimate or predict an outcome (churn) for customers 
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+My answers were correct
+
+:::
